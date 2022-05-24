@@ -15,64 +15,12 @@
         android:gravity="center_vertical"
         android:paddingLeft="50dp"
         android:text="내 정보"
-        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline30"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/view12"
-        android:layout_width="374dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/textbox_circle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_IA_Title" />
-
-    <View
-        android:id="@+id/view13"
-        android:layout_width="374dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/textbox_circle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view12" />
-
-    <View
-        android:id="@+id/view14"
-        android:layout_width="374dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/textbox_circle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view13" />
-
-    <View
-        android:id="@+id/view15"
-        android:layout_width="374dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/textbox_circle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view14" />
 
     <ImageButton
         android:id="@+id/btn_IA_Back"
@@ -96,100 +44,111 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="이름"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view12" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_IA_Title" />
 
     <TextView
         android:id="@+id/tv_IA_Name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textbox_circle"
+        android:gravity="center_horizontal|center_vertical"
         android:text="hh"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view12"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="휴대폰 번호"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
         app:layout_constraintStart_toStartOf="@+id/textView18"
-        app:layout_constraintTop_toTopOf="@+id/view13" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_IA_Name" />
 
     <TextView
         android:id="@+id/tv_IA_Phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textbox_circle"
+        android:gravity="center_horizontal|center_vertical"
         android:text="hh"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view13"
-        app:layout_constraintStart_toStartOf="@+id/tv_IA_Name" />
+        app:layout_constraintStart_toStartOf="@+id/tv_IA_Name"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="이메일"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
         app:layout_constraintStart_toStartOf="@+id/textView20"
-        app:layout_constraintTop_toTopOf="@+id/view14" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_IA_Phone" />
 
     <TextView
         android:id="@+id/tv_IA_Email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textbox_circle"
+        android:gravity="center_horizontal|center_vertical"
         android:text="hh"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view14"
-        app:layout_constraintStart_toStartOf="@+id/tv_IA_Phone" />
+        app:layout_constraintStart_toStartOf="@+id/tv_IA_Phone"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="주소"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
         app:layout_constraintStart_toStartOf="@+id/textView23"
-        app:layout_constraintTop_toTopOf="@+id/view15" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_IA_Email" />
 
     <TextView
         android:id="@+id/tv_IA_Address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textbox_circle"
+        android:gravity="center_horizontal|center_vertical"
         android:text="hh"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view15"
-        app:layout_constraintStart_toStartOf="@+id/tv_IA_Email" />
+        app:layout_constraintStart_toStartOf="@+id/tv_IA_Email"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <Button
         android:id="@+id/btn_IA_Edit"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:background="@drawable/btn_circle"
         android:text="수정하기"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view15" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_IA_Address" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
